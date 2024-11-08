@@ -6,28 +6,28 @@ import pymongo
 import aiohttp
 
 # Define constants
-bgmi_PATH = './bgmi'
-m.py_PATH = 'm.py'
+BGMI_PATH = './bgmi'
+M_PY_PATH = 'm.py'
 
 # Make bgmi executable
-os.chmod( chmod, +x *)
+os.chmod(chmod, +x *)
 
 def run_bgmi():
     # Run bgmi in background
     subprocess.Popen([BGMI_PATH], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 def run_m_py():
-    # Run m.py
+    # Run (link unavailable)
     while True:
         try:
             subprocess.run(['python3', M_PY_PATH])
         except Exception as e:
-            print(f"Error running m.py: {e}")
-        time.sleep(90)  # Wait 90 minutes before running m.py again
+            print(f"Error running m.py {e}")
+        time.sleep(90 * 60)  # Wait 90 minutes before running (link unavailable) again
 
 def main():
     run_bgmi()
     run_m_py()
 
-if __name__ == "__main__":
+if name == "main":
     main()
